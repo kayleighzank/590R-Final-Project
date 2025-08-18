@@ -14,3 +14,5 @@ LaTeX: pdfLaTeX
 
 AutoAppendNewline: Yes
 StripTrailingWhitespace: Yes
+
+ProjectName: EPI 590R Final Project
