@@ -1,0 +1,20 @@
+---
+title: "Final Project"
+format: html
+editor: visual
+---
+
+## Cheeses
+
+Loading in the data
+
+```{r}
+#| message: false
+# install.packages("tidytuesdayR")
+
+tuesdata <- tidytuesdayR::tt_load('2024-06-04')
+## OR
+tuesdata <- tidytuesdayR::tt_load(2024, week = 23)
+
+cheeses <- tuesdata$cheeses
+```
