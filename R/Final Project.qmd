@@ -15,9 +15,11 @@ library(gtsummary)
 library(ggplot2)
 ```
 
+## Descriptive Statistics
+
 ```{r}
 #| label: tbl-one
-#| tbl-cap: "Men's March Madness Team Characteristics Stratified by Number of Championships won from 2008-2004"
+#| tbl-cap: "Men's March Madness Team Characteristics Stratified by Number of Championships Won from 2008-2024 (Excluding 2020)"
 tbl_summary(
 	team_results,
 	by = CHAMP, 
@@ -35,8 +37,10 @@ tbl_summary(
 )
 ```
 
+## Univariate Linear Regression
+
 ```{r}
-#| label: regression-tbl
+#| label: tbl-regression
 #| tbl-cap: "Regression of Number of Championships on 5 Characteristics"
 
 tbl_uvregression(
@@ -60,9 +64,11 @@ tbl_uvregression(
 
 ```
 
+## Figures and Function
+
 ```{r}
 #| label: fig-one
-#| fig-cap: ""
+#| fig-cap: "Histogram of All Team's Performance Against Seed Expectations"
 
 hist(team_results$PASE)
 
