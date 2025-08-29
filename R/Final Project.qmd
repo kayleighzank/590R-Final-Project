@@ -6,6 +6,31 @@ editor: visual
 
 ## Loading Data
 
-```{here::here}
+```{r}
+#| message: false
+load(here::here("data", "team_results.Rdata"))
 
+library(tidyverse)
+library(gtsummary)
+library(gtsummary)
+```
+
+```{r}
+#| label: tbl-one
+#| tbl-cap: "Men's March Madness Team Characteristics Stratified by Number of Championships won from 2008-2004"
+tbl_summary(
+	team_results,
+	by = CHAMP, 
+	include = c (GAMES, WINPERCENT, PAKE, PAKERANK, PASE, PASERANK, TOP2),
+	label = list(
+		GAMES ~ "Tournament Games Played" ,
+		WINPERCENT ~ "Winning Percent", 
+		PAKE ~ "Performance Against Komputer Expectations (PAKE)" ,
+		PAKERANK ~ "PAKE Rank" ,
+		PASE ~ "Performance Against Seed Expectations (PASE)",
+		PASERANK ~ "PASE Rank",
+		TOP2 ~ "Times Team was 1 or 2 Seed"
+	),
+	missing_text = "Missing"
+)
 ```

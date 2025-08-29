@@ -3,10 +3,10 @@
 {r}
 # install.packages("tidytuesdayR")
 
-tuesdata <- tidytuesdayR::tt_load(2024, week = 23)
+library(tidytuesdayR)
+library(tidyverse)
 
-cheeses <- tuesdata$cheeses
+tuesdata <- tidytuesdayR::tt_load(2024, week = 13)
 
-save(cheeses, file = "data/cheeses.RData" )
-
-
+team_results <- tuesdata$`team-results`
+public_picks <- tuesdata$`public-picks`
