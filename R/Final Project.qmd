@@ -1,5 +1,5 @@
 ---
-title: "Final Project: Cheeses"
+title: "Final Project: NCAA Men's March Madness"
 format: html
 editor: visual
 ---
@@ -12,7 +12,7 @@ load(here::here("data", "team_results.Rdata"))
 
 library(tidyverse)
 library(gtsummary)
-library(gtsummary)
+library(ggplot2)
 ```
 
 ```{r}
@@ -33,4 +33,69 @@ tbl_summary(
 	),
 	missing_text = "Missing"
 )
+```
+
+```{r}
+#| label: regression-tbl
+#| tbl-cap: "Regression of Number of Championships on 5 Characteristics"
+
+tbl_uvregression(
+	team_results,
+	y = CHAMP,
+	include = c(
+		GAMES, WINPERCENT, 
+		PAKERANK, PASERANK, TOP2
+	),
+	label = list(
+		GAMES = "Tournament Games Played" ,
+		WINPERCENT = "Winning Percent", 
+		PAKE = "Performance Against Komputer Expectations (PAKE)" ,
+		PAKERANK = "PAKE Rank" ,
+		PASE = "Performance Against Seed Expectations (PASE)",
+		PASERANK = "PASE Rank",
+		TOP2 = "Times Team was 1 or 2 Seed"
+	),
+	method = lm
+)
+
+```
+
+```{r}
+#| label: fig-one
+#| fig-cap: ""
+
+hist(team_results$PASE)
+
+```
+
+```{r}
+
+avgTOP2 <- function(x) {
+	sum <- sum(team_results$TOP2[team_results$CHAMP == x])
+	n <- length(team_results$TOP2[team_results$CHAMP == x])
+	avg = sum/n
+	return(avg)
+}
+
+avg_TOP2 <- c(avgTOP2(0), avgTOP2(1), avgTOP2(2), avgTOP2(3))
+
+avg_TOP2_df <- data.frame(
+CHAMP = c(0:3),
+avg_TOP2
+)
+
+
+
+```
+
+```{r}
+#| label: fig-two
+#| fig-cap: "Average Number of Top 2 Seeds Recieved by Number of Champtionships Won 2008-2024 (Excluding 2020)"
+
+ggplot(avg_TOP2_df, aes (x = CHAMP, y = avg_TOP2)) + 
+	geom_col(fill = "steelblue") +
+  labs(
+       x = "Championships",
+       y = "Average Number of Top 2 Seeds Recieved") +
+  theme_minimal()
 ```
