@@ -80,6 +80,8 @@ tbl_uvregression(
 
 ## Figures and Function
 
+@fig-one shows the distribution of all team's performance against seed expectations (PASE).
+
 ```{r}
 #| label: fig-one
 #| fig-cap: "Histogram of All Team's Performance Against Seed Expectations"
