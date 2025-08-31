@@ -20,7 +20,8 @@ library(ggplot2)
 ```{r}
 #| label: tbl-one
 #| tbl-cap: "Men's March Madness Team Characteristics Stratified by Number of Championships Won from 2008-2024 (Excluding 2020)"
-tbl_summary(
+
+table1 <- tbl_summary(
 	team_results,
 	by = CHAMP, 
 	include = c (GAMES, WINPERCENT, PAKE, PAKERANK, PASE, PASERANK, TOP2),
@@ -34,8 +35,15 @@ tbl_summary(
 		TOP2 ~ "Times Team was 1 or 2 Seed"
 	),
 	missing_text = "Missing"
-)
+) %>%
+	add_overall()
+
+table1
+
+median_games <- inline_text(table1, variable = GAMES, column = "stat_0")
 ```
+
+The median number of tournament games played from 2008-2024 (excluding 2020) among all teams is `r median_games`.
 
 ## Univariate Linear Regression
 
@@ -104,4 +112,6 @@ ggplot(avg_TOP2_df, aes (x = CHAMP, y = avg_TOP2)) +
        x = "Championships",
        y = "Average Number of Top 2 Seeds Recieved") +
   theme_minimal()
+
+
 ```
