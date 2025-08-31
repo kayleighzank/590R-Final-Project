@@ -6,6 +6,8 @@ editor: visual
 
 ## Loading Data
 
+The data set used in this project is from the Tidy Tuesday GitHub, specifically from the week of 3-26-2024. The data set is titled "NCAA Men's March Madness", and it comes from Nishaan Amin's Kaggle data set and analysis "Bracketology: predicting March Madness". The data is from 2008-2024 for the men's teams. The year 2020 is not included because the tournament was cancelled due to Covid.
+
 ```{r}
 #| message: false
 load(here::here("data", "team_results.Rdata"))
