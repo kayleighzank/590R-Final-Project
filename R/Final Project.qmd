@@ -17,6 +17,8 @@ library(ggplot2)
 
 ## Descriptive Statistics
 
+@tbl-one shows the descriptive statistics of selected characteristics by number of championships won from 2008-2024 (excluding 2020).
+
 ```{r}
 #| label: tbl-one
 #| tbl-cap: "Men's March Madness Team Characteristics Stratified by Number of Championships Won from 2008-2024 (Excluding 2020)"
@@ -117,5 +119,8 @@ ggplot(avg_TOP2_df, aes (x = CHAMP, y = avg_TOP2)) +
        y = "Average Number of Top 2 Seeds Recieved") +
   theme_minimal()
 
+avg_TOP2_2 <- avgTOP2(2)
 
 ```
+
+Among teams with 2 championships between 2008-2004 (excluding 2020), the average number of top 2 seeds received in the same time period is `r avg_TOP2_2`.
