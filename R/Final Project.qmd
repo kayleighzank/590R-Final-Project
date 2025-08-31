@@ -41,9 +41,13 @@ table1 <- tbl_summary(
 table1
 
 median_games <- inline_text(table1, variable = GAMES, column = "stat_0")
+
+median_games_2 <- median(team_results$GAMES[team_results$CHAMP == 2])
 ```
 
 The median number of tournament games played from 2008-2024 (excluding 2020) among all teams is `r median_games`.
+
+Among teams that won two championships from 2008-2024, the median number of tournament games played was `r median_games_2`.
 
 ## Univariate Linear Regression
 

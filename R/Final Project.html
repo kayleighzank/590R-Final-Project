@@ -127,7 +127,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">add_overall</span>()</span>
 <span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>table1</span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>median_games <span class="ot">&lt;-</span> <span class="fu">inline_text</span>(table1, <span class="at">variable =</span> GAMES, <span class="at">column =</span> <span class="st">"stat_0"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>median_games <span class="ot">&lt;-</span> <span class="fu">inline_text</span>(table1, <span class="at">variable =</span> GAMES, <span class="at">column =</span> <span class="st">"stat_0"</span>)</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>median_games_2 <span class="ot">&lt;-</span> <span class="fu">median</span>(team_results<span class="sc">$</span>GAMES[team_results<span class="sc">$</span>CHAMP <span class="sc">==</span> <span class="dv">2</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="tbl-one" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-one-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -135,23 +137,23 @@ Table&nbsp;1: Men’s March Madness Team Characteristics Stratified by Number of
 </figcaption>
 <div aria-describedby="tbl-one-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="lbgeersdxn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#lbgeersdxn table {
+<div id="znfooxchie" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#znfooxchie table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#lbgeersdxn thead, #lbgeersdxn tbody, #lbgeersdxn tfoot, #lbgeersdxn tr, #lbgeersdxn td, #lbgeersdxn th {
+#znfooxchie thead, #znfooxchie tbody, #znfooxchie tfoot, #znfooxchie tr, #znfooxchie td, #znfooxchie th {
   border-style: none;
 }
 
-#lbgeersdxn p {
+#znfooxchie p {
   margin: 0;
   padding: 0;
 }
 
-#lbgeersdxn .gt_table {
+#znfooxchie .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -177,12 +179,12 @@ Table&nbsp;1: Men’s March Madness Team Characteristics Stratified by Number of
   border-left-color: #D3D3D3;
 }
 
-#lbgeersdxn .gt_caption {
+#znfooxchie .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#lbgeersdxn .gt_title {
+#znfooxchie .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -194,7 +196,7 @@ Table&nbsp;1: Men’s March Madness Team Characteristics Stratified by Number of
   border-bottom-width: 0;
 }
 
-#lbgeersdxn .gt_subtitle {
+#znfooxchie .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -206,7 +208,7 @@ Table&nbsp;1: Men’s March Madness Team Characteristics Stratified by Number of
   border-top-width: 0;
 }
 
-#lbgeersdxn .gt_heading {
+#znfooxchie .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -218,13 +220,13 @@ Table&nbsp;1: Men’s March Madness Team Characteristics Stratified by Number of
   border-right-color: #D3D3D3;
 }
 
-#lbgeersdxn .gt_bottom_border {
+#znfooxchie .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#lbgeersdxn .gt_col_headings {
+#znfooxchie .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -239,7 +241,7 @@ Table&nbsp;1: Men’s March Madness Team Characteristics Stratified by Number of
   border-right-color: #D3D3D3;
 }
 
-#lbgeersdxn .gt_col_heading {
+#znfooxchie .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -259,7 +261,7 @@ Table&nbsp;1: Men’s March Madness Team Characteristics Stratified by Number of
   overflow-x: hidden;
 }
 
-#lbgeersdxn .gt_column_spanner_outer {
+#znfooxchie .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -271,15 +273,15 @@ Table&nbsp;1: Men’s March Madness Team Characteristics Stratified by Number of
   padding-right: 4px;
 }
 
-#lbgeersdxn .gt_column_spanner_outer:first-child {
+#znfooxchie .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#lbgeersdxn .gt_column_spanner_outer:last-child {
+#znfooxchie .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#lbgeersdxn .gt_column_spanner {
+#znfooxchie .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -291,11 +293,11 @@ Table&nbsp;1: Men’s March Madness Team Characteristics Stratified by Number of
   width: 100%;
 }
 
-#lbgeersdxn .gt_spanner_row {
+#znfooxchie .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#lbgeersdxn .gt_group_heading {
+#znfooxchie .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -321,7 +323,7 @@ Table&nbsp;1: Men’s March Madness Team Characteristics Stratified by Number of
   text-align: left;
 }
 
-#lbgeersdxn .gt_empty_group_heading {
+#znfooxchie .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -336,15 +338,15 @@ Table&nbsp;1: Men’s March Madness Team Characteristics Stratified by Number of
   vertical-align: middle;
 }
 
-#lbgeersdxn .gt_from_md > :first-child {
+#znfooxchie .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#lbgeersdxn .gt_from_md > :last-child {
+#znfooxchie .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#lbgeersdxn .gt_row {
+#znfooxchie .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -363,7 +365,7 @@ Table&nbsp;1: Men’s March Madness Team Characteristics Stratified by Number of
   overflow-x: hidden;
 }
 
-#lbgeersdxn .gt_stub {
+#znfooxchie .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -376,7 +378,7 @@ Table&nbsp;1: Men’s March Madness Team Characteristics Stratified by Number of
   padding-right: 5px;
 }
 
-#lbgeersdxn .gt_stub_row_group {
+#znfooxchie .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -390,15 +392,15 @@ Table&nbsp;1: Men’s March Madness Team Characteristics Stratified by Number of
   vertical-align: top;
 }
 
-#lbgeersdxn .gt_row_group_first td {
+#znfooxchie .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#lbgeersdxn .gt_row_group_first th {
+#znfooxchie .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#lbgeersdxn .gt_summary_row {
+#znfooxchie .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -408,16 +410,16 @@ Table&nbsp;1: Men’s March Madness Team Characteristics Stratified by Number of
   padding-right: 5px;
 }
 
-#lbgeersdxn .gt_first_summary_row {
+#znfooxchie .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#lbgeersdxn .gt_first_summary_row.thick {
+#znfooxchie .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#lbgeersdxn .gt_last_summary_row {
+#znfooxchie .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -427,7 +429,7 @@ Table&nbsp;1: Men’s March Madness Team Characteristics Stratified by Number of
   border-bottom-color: #D3D3D3;
 }
 
-#lbgeersdxn .gt_grand_summary_row {
+#znfooxchie .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -437,7 +439,7 @@ Table&nbsp;1: Men’s March Madness Team Characteristics Stratified by Number of
   padding-right: 5px;
 }
 
-#lbgeersdxn .gt_first_grand_summary_row {
+#znfooxchie .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -447,7 +449,7 @@ Table&nbsp;1: Men’s March Madness Team Characteristics Stratified by Number of
   border-top-color: #D3D3D3;
 }
 
-#lbgeersdxn .gt_last_grand_summary_row_top {
+#znfooxchie .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -457,11 +459,11 @@ Table&nbsp;1: Men’s March Madness Team Characteristics Stratified by Number of
   border-bottom-color: #D3D3D3;
 }
 
-#lbgeersdxn .gt_striped {
+#znfooxchie .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#lbgeersdxn .gt_table_body {
+#znfooxchie .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -470,7 +472,7 @@ Table&nbsp;1: Men’s March Madness Team Characteristics Stratified by Number of
   border-bottom-color: #D3D3D3;
 }
 
-#lbgeersdxn .gt_footnotes {
+#znfooxchie .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -484,7 +486,7 @@ Table&nbsp;1: Men’s March Madness Team Characteristics Stratified by Number of
   border-right-color: #D3D3D3;
 }
 
-#lbgeersdxn .gt_footnote {
+#znfooxchie .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -493,7 +495,7 @@ Table&nbsp;1: Men’s March Madness Team Characteristics Stratified by Number of
   padding-right: 5px;
 }
 
-#lbgeersdxn .gt_sourcenotes {
+#znfooxchie .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -507,7 +509,7 @@ Table&nbsp;1: Men’s March Madness Team Characteristics Stratified by Number of
   border-right-color: #D3D3D3;
 }
 
-#lbgeersdxn .gt_sourcenote {
+#znfooxchie .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -515,72 +517,72 @@ Table&nbsp;1: Men’s March Madness Team Characteristics Stratified by Number of
   padding-right: 5px;
 }
 
-#lbgeersdxn .gt_left {
+#znfooxchie .gt_left {
   text-align: left;
 }
 
-#lbgeersdxn .gt_center {
+#znfooxchie .gt_center {
   text-align: center;
 }
 
-#lbgeersdxn .gt_right {
+#znfooxchie .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#lbgeersdxn .gt_font_normal {
+#znfooxchie .gt_font_normal {
   font-weight: normal;
 }
 
-#lbgeersdxn .gt_font_bold {
+#znfooxchie .gt_font_bold {
   font-weight: bold;
 }
 
-#lbgeersdxn .gt_font_italic {
+#znfooxchie .gt_font_italic {
   font-style: italic;
 }
 
-#lbgeersdxn .gt_super {
+#znfooxchie .gt_super {
   font-size: 65%;
 }
 
-#lbgeersdxn .gt_footnote_marks {
+#znfooxchie .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#lbgeersdxn .gt_asterisk {
+#znfooxchie .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#lbgeersdxn .gt_indent_1 {
+#znfooxchie .gt_indent_1 {
   text-indent: 5px;
 }
 
-#lbgeersdxn .gt_indent_2 {
+#znfooxchie .gt_indent_2 {
   text-indent: 10px;
 }
 
-#lbgeersdxn .gt_indent_3 {
+#znfooxchie .gt_indent_3 {
   text-indent: 15px;
 }
 
-#lbgeersdxn .gt_indent_4 {
+#znfooxchie .gt_indent_4 {
   text-indent: 20px;
 }
 
-#lbgeersdxn .gt_indent_5 {
+#znfooxchie .gt_indent_5 {
   text-indent: 25px;
 }
 
-#lbgeersdxn .katex-display {
+#znfooxchie .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#lbgeersdxn div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#znfooxchie div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -680,7 +682,8 @@ N = 1<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic
 </figure>
 </div>
 </div>
-<p>The median number of tournament games played from 2008-2024 (excluding 2020) among all teams is 4 (2, 9)</p>
+<p>The median number of tournament games played from 2008-2024 (excluding 2020) among all teams is 4 (2, 9).</p>
+<p>Among teams that won two championships from 2008-2024, the median number of tournament games played was 48.</p>
 </section>
 <section id="univariate-linear-regression" class="level2">
 <h2 class="anchored" data-anchor-id="univariate-linear-regression">Univariate Linear Regression</h2>
@@ -710,23 +713,23 @@ Table&nbsp;2: Regression of Number of Championships on 5 Characteristics
 </figcaption>
 <div aria-describedby="tbl-regression-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="mcthuwbwcy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#mcthuwbwcy table {
+<div id="jxygxrrzsq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#jxygxrrzsq table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#mcthuwbwcy thead, #mcthuwbwcy tbody, #mcthuwbwcy tfoot, #mcthuwbwcy tr, #mcthuwbwcy td, #mcthuwbwcy th {
+#jxygxrrzsq thead, #jxygxrrzsq tbody, #jxygxrrzsq tfoot, #jxygxrrzsq tr, #jxygxrrzsq td, #jxygxrrzsq th {
   border-style: none;
 }
 
-#mcthuwbwcy p {
+#jxygxrrzsq p {
   margin: 0;
   padding: 0;
 }
 
-#mcthuwbwcy .gt_table {
+#jxygxrrzsq .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -752,12 +755,12 @@ Table&nbsp;2: Regression of Number of Championships on 5 Characteristics
   border-left-color: #D3D3D3;
 }
 
-#mcthuwbwcy .gt_caption {
+#jxygxrrzsq .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#mcthuwbwcy .gt_title {
+#jxygxrrzsq .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -769,7 +772,7 @@ Table&nbsp;2: Regression of Number of Championships on 5 Characteristics
   border-bottom-width: 0;
 }
 
-#mcthuwbwcy .gt_subtitle {
+#jxygxrrzsq .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -781,7 +784,7 @@ Table&nbsp;2: Regression of Number of Championships on 5 Characteristics
   border-top-width: 0;
 }
 
-#mcthuwbwcy .gt_heading {
+#jxygxrrzsq .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -793,13 +796,13 @@ Table&nbsp;2: Regression of Number of Championships on 5 Characteristics
   border-right-color: #D3D3D3;
 }
 
-#mcthuwbwcy .gt_bottom_border {
+#jxygxrrzsq .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#mcthuwbwcy .gt_col_headings {
+#jxygxrrzsq .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -814,7 +817,7 @@ Table&nbsp;2: Regression of Number of Championships on 5 Characteristics
   border-right-color: #D3D3D3;
 }
 
-#mcthuwbwcy .gt_col_heading {
+#jxygxrrzsq .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -834,7 +837,7 @@ Table&nbsp;2: Regression of Number of Championships on 5 Characteristics
   overflow-x: hidden;
 }
 
-#mcthuwbwcy .gt_column_spanner_outer {
+#jxygxrrzsq .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -846,15 +849,15 @@ Table&nbsp;2: Regression of Number of Championships on 5 Characteristics
   padding-right: 4px;
 }
 
-#mcthuwbwcy .gt_column_spanner_outer:first-child {
+#jxygxrrzsq .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#mcthuwbwcy .gt_column_spanner_outer:last-child {
+#jxygxrrzsq .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#mcthuwbwcy .gt_column_spanner {
+#jxygxrrzsq .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -866,11 +869,11 @@ Table&nbsp;2: Regression of Number of Championships on 5 Characteristics
   width: 100%;
 }
 
-#mcthuwbwcy .gt_spanner_row {
+#jxygxrrzsq .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#mcthuwbwcy .gt_group_heading {
+#jxygxrrzsq .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -896,7 +899,7 @@ Table&nbsp;2: Regression of Number of Championships on 5 Characteristics
   text-align: left;
 }
 
-#mcthuwbwcy .gt_empty_group_heading {
+#jxygxrrzsq .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -911,15 +914,15 @@ Table&nbsp;2: Regression of Number of Championships on 5 Characteristics
   vertical-align: middle;
 }
 
-#mcthuwbwcy .gt_from_md > :first-child {
+#jxygxrrzsq .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#mcthuwbwcy .gt_from_md > :last-child {
+#jxygxrrzsq .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#mcthuwbwcy .gt_row {
+#jxygxrrzsq .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -938,7 +941,7 @@ Table&nbsp;2: Regression of Number of Championships on 5 Characteristics
   overflow-x: hidden;
 }
 
-#mcthuwbwcy .gt_stub {
+#jxygxrrzsq .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -951,7 +954,7 @@ Table&nbsp;2: Regression of Number of Championships on 5 Characteristics
   padding-right: 5px;
 }
 
-#mcthuwbwcy .gt_stub_row_group {
+#jxygxrrzsq .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -965,15 +968,15 @@ Table&nbsp;2: Regression of Number of Championships on 5 Characteristics
   vertical-align: top;
 }
 
-#mcthuwbwcy .gt_row_group_first td {
+#jxygxrrzsq .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#mcthuwbwcy .gt_row_group_first th {
+#jxygxrrzsq .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#mcthuwbwcy .gt_summary_row {
+#jxygxrrzsq .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -983,16 +986,16 @@ Table&nbsp;2: Regression of Number of Championships on 5 Characteristics
   padding-right: 5px;
 }
 
-#mcthuwbwcy .gt_first_summary_row {
+#jxygxrrzsq .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#mcthuwbwcy .gt_first_summary_row.thick {
+#jxygxrrzsq .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#mcthuwbwcy .gt_last_summary_row {
+#jxygxrrzsq .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1002,7 +1005,7 @@ Table&nbsp;2: Regression of Number of Championships on 5 Characteristics
   border-bottom-color: #D3D3D3;
 }
 
-#mcthuwbwcy .gt_grand_summary_row {
+#jxygxrrzsq .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1012,7 +1015,7 @@ Table&nbsp;2: Regression of Number of Championships on 5 Characteristics
   padding-right: 5px;
 }
 
-#mcthuwbwcy .gt_first_grand_summary_row {
+#jxygxrrzsq .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1022,7 +1025,7 @@ Table&nbsp;2: Regression of Number of Championships on 5 Characteristics
   border-top-color: #D3D3D3;
 }
 
-#mcthuwbwcy .gt_last_grand_summary_row_top {
+#jxygxrrzsq .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1032,11 +1035,11 @@ Table&nbsp;2: Regression of Number of Championships on 5 Characteristics
   border-bottom-color: #D3D3D3;
 }
 
-#mcthuwbwcy .gt_striped {
+#jxygxrrzsq .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#mcthuwbwcy .gt_table_body {
+#jxygxrrzsq .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1045,7 +1048,7 @@ Table&nbsp;2: Regression of Number of Championships on 5 Characteristics
   border-bottom-color: #D3D3D3;
 }
 
-#mcthuwbwcy .gt_footnotes {
+#jxygxrrzsq .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1059,7 +1062,7 @@ Table&nbsp;2: Regression of Number of Championships on 5 Characteristics
   border-right-color: #D3D3D3;
 }
 
-#mcthuwbwcy .gt_footnote {
+#jxygxrrzsq .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1068,7 +1071,7 @@ Table&nbsp;2: Regression of Number of Championships on 5 Characteristics
   padding-right: 5px;
 }
 
-#mcthuwbwcy .gt_sourcenotes {
+#jxygxrrzsq .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1082,7 +1085,7 @@ Table&nbsp;2: Regression of Number of Championships on 5 Characteristics
   border-right-color: #D3D3D3;
 }
 
-#mcthuwbwcy .gt_sourcenote {
+#jxygxrrzsq .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1090,72 +1093,72 @@ Table&nbsp;2: Regression of Number of Championships on 5 Characteristics
   padding-right: 5px;
 }
 
-#mcthuwbwcy .gt_left {
+#jxygxrrzsq .gt_left {
   text-align: left;
 }
 
-#mcthuwbwcy .gt_center {
+#jxygxrrzsq .gt_center {
   text-align: center;
 }
 
-#mcthuwbwcy .gt_right {
+#jxygxrrzsq .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#mcthuwbwcy .gt_font_normal {
+#jxygxrrzsq .gt_font_normal {
   font-weight: normal;
 }
 
-#mcthuwbwcy .gt_font_bold {
+#jxygxrrzsq .gt_font_bold {
   font-weight: bold;
 }
 
-#mcthuwbwcy .gt_font_italic {
+#jxygxrrzsq .gt_font_italic {
   font-style: italic;
 }
 
-#mcthuwbwcy .gt_super {
+#jxygxrrzsq .gt_super {
   font-size: 65%;
 }
 
-#mcthuwbwcy .gt_footnote_marks {
+#jxygxrrzsq .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#mcthuwbwcy .gt_asterisk {
+#jxygxrrzsq .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#mcthuwbwcy .gt_indent_1 {
+#jxygxrrzsq .gt_indent_1 {
   text-indent: 5px;
 }
 
-#mcthuwbwcy .gt_indent_2 {
+#jxygxrrzsq .gt_indent_2 {
   text-indent: 10px;
 }
 
-#mcthuwbwcy .gt_indent_3 {
+#jxygxrrzsq .gt_indent_3 {
   text-indent: 15px;
 }
 
-#mcthuwbwcy .gt_indent_4 {
+#jxygxrrzsq .gt_indent_4 {
   text-indent: 20px;
 }
 
-#mcthuwbwcy .gt_indent_5 {
+#jxygxrrzsq .gt_indent_5 {
   text-indent: 25px;
 }
 
-#mcthuwbwcy .katex-display {
+#jxygxrrzsq .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#mcthuwbwcy div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#jxygxrrzsq div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
