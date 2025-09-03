@@ -8,8 +8,8 @@ Instuctions:
 
 1. Fork this repository and download the zip file containing all of the project files
 2. Run the Quarto file
-        a. You can find this file in the folder labeled "R"
-        b. The Quarto file is named "Final Project.qmd"
+         a. You can find this file in the folder labeled "R"
+         b. The Quarto file is named "Final Project.qmd"
    
 The Quarto file will load in the data set that exists in the data folder of this repository. 
 
