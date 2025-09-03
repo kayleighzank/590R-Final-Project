@@ -7,10 +7,10 @@ The data is from 2008-2024 for the men's teams. The year 2020 is not included be
 Instuctions: 
 
 1. Fork this repository and download the zip file containing all of the project files
-2. Run the Quarto file
-         a. You can find this file in the folder labeled "R"
+2. Run the Quarto file /n
+         a. You can find this file in the folder labeled "R"   
          b. The Quarto file is named "Final Project.qmd"
-   
+
 The Quarto file will load in the data set that exists in the data folder of this repository. 
 
 The R script file attached downloads the data directly from the Tiny Tuesday GitHub repository and saves a local copy, if needed. 
